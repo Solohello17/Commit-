@@ -1,5 +1,5 @@
 /* Commit PWA Service Worker */
-const CACHE_VERSION = 'v1.0.0';
+const CACHE_VERSION = 'v1.0.1';
 const STATIC_CACHE = `commit-static-${CACHE_VERSION}`;
 const STATIC_ASSETS = [
   './',
@@ -66,4 +66,3 @@ self.addEventListener('fetch', event => {
   // third-party (firebase cdn, gstatic): just go to network
   // (Firestore needs live network; we don't try to cache API calls here)
 });
-    
