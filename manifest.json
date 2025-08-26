@@ -10,5 +10,20 @@
   "icons": [
     { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/wide-1280x720.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide",
+      "label": "Desktop view of tasks and chat"
+    },
+    {
+      "src": "screenshots/narrow-720x1280.png",
+      "type": "image/png",
+      "sizes": "720x1280",
+      "label": "Mobile view with add task and chat"
+    }
   ]
 }
