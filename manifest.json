@@ -1,0 +1,14 @@
+{
+  "name": "Commit — Collaborative Productivity",
+  "short_name": "Commit",
+  "description": "Shared tasks, chat, and daily streaks to keep your group accountable.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#317EFB",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
