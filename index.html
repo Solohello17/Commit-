@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Commit — Collaborative Productivity</title>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#317EFB">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+
 
   <!-- Firebase SDKs (compat) -->
   <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
@@ -351,5 +356,16 @@
       }
     };
   </script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      // use a versioned SW to force updates when you deploy
+      navigator.serviceWorker.register('./service-worker.js')
+        .then(reg => console.log('SW registered', reg.scope))
+        .catch(err => console.error('SW registration failed:', err));
+    });
+  }
+</script>
+
 </body>
 </html>
